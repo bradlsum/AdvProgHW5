@@ -3,6 +3,10 @@ public class Customer {
     private ShoppingCart shoppingCart;
     private WishList wishList;
 
+    Customer(String name){
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -25,5 +29,10 @@ public class Customer {
 
     public void setWishList(WishList wishList) {
         this.wishList = wishList;
+    }
+
+    @Override
+    public String toString() {
+        return this.getName();
     }
 }

@@ -1,7 +1,11 @@
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.Set;
+
 public class Store {
     private String name;
-    private Department departments[] = new Department[100];
-    private Customer customers[] = new Customer[100];
+    private ArrayList<Department> departments = new ArrayList<Department>();
+    private ArrayList<Customer> customers = new ArrayList<Customer>();
 
     Store(){
         this.name = "";
@@ -12,32 +16,14 @@ public class Store {
     }
 
     public void enter(Customer customer){
-        for (int i = 0; i < this.customers.length; ++i){
-            if (this.customers[i] == customer) return;
-            else if (this.customers[i].getName() == "") this.customers[i] = customer;
-        }
-        System.out.println("Customer was already in the store...");
+        customer.setShoppingCart(this.getShoppingCart());
+        if (this.customers.contains(customer)) System.out.println("Customer was already in the store...");
+        else this.customers.add(customer);
     }
 
     public void exit(Customer customer){
-        int end = 0, empty = 0;
-
-        for (int i = 0; i < this.customers.length; ++i){
-            if (this.customers[i] == customer) {
-                this.customers[i] = new Customer();
-                empty = i;
-            }
-            else if (this.customers[i].getName() == ""){
-                end = i -1;
-            }
-        }
-
-        if (this.customers[empty] == this.customers[end]) {
-            this.customers[empty] = this.customers[end];
-            this.customers[end] = new Customer();
-        }
-
-        System.out.println("Customer was not in the store...");
+        if (!this.customers.contains(customer)) System.out.println("Customer was not in the store...");
+        else this.customers.remove(customer);
     }
 
     public ShoppingCart getShoppingCart(){
@@ -48,27 +34,24 @@ public class Store {
         return new WishList();
     }
 
-    public Customer[] getCustomers() {
+    public ArrayList<Customer> getCustomers() {
         return customers;
     }
 
-    public Department[] getDepartments() {
+    public ArrayList<Department> getDepartments() {
         return departments;
     }
 
     public void addDepartment(Department department){
-        for (int i = 0; i < this.departments.length; ++i){
-            if (this.departments[i] == department) return;
-            else if (this.departments[i].getName() == "") this.departments[i] = department;
-        }
-        System.out.println("Department was already in the store...");
+        if (this.departments.contains(department)) System.out.println("Customer was already in the store...");
+        else this.departments.add(department);
     }
 
-    public void save(String filename){
+    public void save(){
 
     }
 
-    public void load(String filename){
+    public void load(){
 
     }
 }

@@ -2,7 +2,7 @@ public class Item {
     private String name;
     private int itemId;
     private int departmentId;
-    private float price;
+    private double price;
 
     Item(){
         this.name = "";
@@ -11,7 +11,7 @@ public class Item {
         this.price = 0;
     }
 
-    Item(String name, int itemId, int departmentId, int price){
+    Item(String name, int itemId, int departmentId, double price){
         this.name = name;
         this.itemId = itemId;
         this.departmentId = departmentId;
@@ -42,11 +42,11 @@ public class Item {
         this.departmentId = departmentId;
     }
 
-    public float getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 }

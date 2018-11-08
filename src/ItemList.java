@@ -13,8 +13,11 @@ public abstract class ItemList {
 
     public void addItem(Item item){
         for (int i = 0; i < this.items.length; ++i){
-            if (this.items[i] == item) return;
-            else if (this.items[i].getName() == "") this.items[i] = item;
+            if (this.items[i] == null){
+                this.items[i] = item;
+                return;
+            }
+            else if (this.items[i] == item) return;
         }
         System.out.println("Item is already in the list...");
     }
@@ -38,5 +41,16 @@ public abstract class ItemList {
         }
 
         System.out.println("Customer was not in the store...");
+    }
+
+    @Override
+    public String toString() {
+        String list = "";
+        for (int i = 0; i < this.items.length; ++i){
+            if (this.items[i] != null){
+                list += this.items[i].getName() + ", ";
+            }
+        }
+        return list;
     }
 }
