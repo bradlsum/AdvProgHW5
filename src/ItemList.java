@@ -1,23 +1,42 @@
 import java.util.Set;
 
 public abstract class ItemList {
-    Set<Item> items;
+    Item items[] = new Item[100];
 
     ItemList(){
 
     }
 
     ItemList(Item i){
-        this.items.add(i);
+        this.items[0] = i;
     }
 
-    public void addItem(Item i){
-        if (!this.items.contains(i)) this.items.add(i);
-        else System.out.println("Item is already in the list...");
+    public void addItem(Item item){
+        for (int i = 0; i < this.items.length; ++i){
+            if (this.items[i] == item) return;
+            else if (this.items[i].getName() == "") this.items[i] = item;
+        }
+        System.out.println("Item is already in the list...");
     }
 
-    public void removeItem(Item i){
-        if (this.items.contains(i)) this.items.remove(i);
-        else System.out.println("Item is not in the list...");
+    public void removeItem(Item item){
+        int end = 0, empty = 0;
+
+        for (int i = 0; i < this.items.length; ++i){
+            if (this.items[i] == item) {
+                this.items[i] = new Item();
+                empty = i;
+            }
+            else if (this.items[i].getName() == ""){
+                end = i -1;
+            }
+        }
+
+        if (this.items[empty] == this.items[end]) {
+            this.items[empty] = this.items[end];
+            this.items[end] = new Item();
+        }
+
+        System.out.println("Customer was not in the store...");
     }
 }

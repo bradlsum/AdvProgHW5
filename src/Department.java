@@ -3,9 +3,9 @@ import java.util.Set;
 public abstract class Department {
     private String name;
     private int departmentId;
-    private Set<Item> items;
-    private Set<Customer> customers;
-    private Set<Customer> observers;
+    private Item items[] = new Item[100];
+    private Customer customers[] = new Customer[100];
+    private Customer observers[] = new Customer[100];
 
     Department(){
 
@@ -17,35 +17,69 @@ public abstract class Department {
     }
 
     public void enter(Customer customer){
-        customers.add(customer);
+        for (int i = 0; i < this.customers.length; ++i){
+            if (this.customers[i] == customer) return;
+            else if (this.customers[i].getName() == "") this.customers[i] = customer;
+        }
+        System.out.println("Customer was already in the store...");
     }
 
     public void exit(Customer customer){
-        customers.remove(customer);
+        int end = 0, empty = 0;
+
+        for (int i = 0; i < this.customers.length; ++i){
+            if (this.customers[i] == customer) {
+                this.customers[i] = new Customer();
+                empty = i;
+            }
+            else if (this.customers[i].getName() == ""){
+                end = i -1;
+            }
+        }
+
+        if (this.customers[empty] == this.customers[end]) {
+            this.customers[empty] = this.customers[end];
+            this.customers[end] = new Customer();
+        }
+
+        System.out.println("Customer was not in the store...");
     }
 
-    public Set<Customer> getCustomers() {
+    public Customer[] getCustomers() {
         return customers;
     }
 
-    public Set<Item> getItems() {
+    public Item[] getItems() {
         return items;
     }
 
-    public void addCustomer(Customer customer){
-        this.customers.add(customer);
-    }
-
-    public void removeCustomer(Customer customer){
-        this.customers.remove(customer);
-    }
-
     public void addObserver(Customer customer){
-        this.observers.add(customer);
+        for (int i = 0; i < this.observers.length; ++i){
+            if (this.observers[i] == customer) return;
+            else if (this.observers[i].getName() == "") this.observers[i] = customer;
+        }
+        System.out.println("Observer was already in the list...");
     }
 
     public void removeObserver(Customer customer){
-        this.observers.remove(customer);
+        int end = 0, empty = 0;
+
+        for (int i = 0; i < this.observers.length; ++i){
+            if (this.observers[i] == customer) {
+                this.observers[i] = new Customer();
+                empty = i;
+            }
+            else if (this.observers[i].getName() == ""){
+                end = i -1;
+            }
+        }
+
+        if (this.observers[empty] == this.observers[end]) {
+            this.observers[empty] = this.observers[end];
+            this.observers[end] = new Customer();
+        }
+
+        System.out.println("Observer was not in the list...");
     }
 
     public String getName() {
@@ -64,7 +98,7 @@ public abstract class Department {
         this.departmentId = departmentId;
     }
 
-    public Set<Customer> getObservers() {
+    public Customer[] getObservers() {
         return observers;
     }
 
