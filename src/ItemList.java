@@ -1,6 +1,7 @@
+import java.io.Serializable;
 import java.util.Set;
 
-public abstract class ItemList {
+public abstract class ItemList implements Serializable {
     Item items[] = new Item[100];
 
     ItemList(){

@@ -1,4 +1,6 @@
-public class Item {
+import java.io.Serializable;
+
+public class Item implements Serializable {
     private String name;
     private int itemId;
     private int departmentId;
@@ -48,5 +50,10 @@ public class Item {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    @Override
+    public String toString() {
+        return this.itemId + "\t" + this.departmentId + "\t" + this.name + "\t" + this.price;
     }
 }

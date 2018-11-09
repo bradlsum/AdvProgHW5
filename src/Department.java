@@ -1,6 +1,8 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Department {
+public abstract class Department implements Serializable {
+    static int id = 0;
     private String name;
     private int departmentId;
     private Item items[] = new Item[100];
@@ -86,13 +88,14 @@ public abstract class Department {
         }
     }
 
-    public void addItem(String name, double price, int id){
+    public void addItem(String name, double price){
         for (int i = 0; i < this.items.length; ++i){
             if (this.items[i] == null){
                 this.items[i] = new Item();
                 this.items[i].setPrice(price);
                 this.items[i].setName(name);
                 this.items[i].setItemId(id);
+                id = id++;
                 this.items[i].setDepartmentId(this.departmentId);
                 return;
             }
@@ -100,6 +103,13 @@ public abstract class Department {
                 System.out.println("Item is already in the list...");
                 return;
             }
+        }
+    }
+
+    public void printItems(){
+        System.out.println("Dept.ID\tID\tName\tPrice");
+        for (int i = 0; i <this.items.length; ++i){
+            System.out.println(this.items[i]);
         }
     }
 }

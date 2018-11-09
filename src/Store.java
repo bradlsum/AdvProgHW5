@@ -1,11 +1,11 @@
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Set;
+import java.io.*;
+import java.util.*;
 
-public class Store {
+public class Store implements Serializable {
+    static int id = 0;
     private String name;
     private ArrayList<Department> departments = new ArrayList<Department>();
-    private ArrayList<Customer> customers = new ArrayList<Customer>();
+    private Map<String, Customer> customers = new HashMap<String, Customer>();
 
     Store(){
         this.name = "";
@@ -17,12 +17,12 @@ public class Store {
 
     public void enter(Customer customer){
         customer.setShoppingCart(this.getShoppingCart());
-        if (this.customers.contains(customer)) System.out.println("Customer was already in the store...");
-        else this.customers.add(customer);
+        if (this.customers.containsKey(customer.getName())) System.out.println("Customer was already in the store...");
+        else this.customers.put(customer.getName(), customer);
     }
 
-    public void exit(Customer customer){
-        if (!this.customers.contains(customer)) System.out.println("Customer was not in the store...");
+    public void exit(String customer){
+        if (!this.customers.containsKey(customer)) System.out.println("Customer was not in the store...");
         else this.customers.remove(customer);
     }
 
@@ -34,7 +34,7 @@ public class Store {
         return new WishList();
     }
 
-    public ArrayList<Customer> getCustomers() {
+    public Map<String, Customer> getCustomers() {
         return customers;
     }
 
@@ -44,14 +44,10 @@ public class Store {
 
     public void addDepartment(Department department){
         if (this.departments.contains(department)) System.out.println("Customer was already in the store...");
-        else this.departments.add(department);
-    }
-
-    public void save(){
-
-    }
-
-    public void load(){
-
+        else{
+            department.setDepartmentId(id);
+            id = id++;
+            this.departments.add(department);
+        }
     }
 }
