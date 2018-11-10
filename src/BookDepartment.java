@@ -1,5 +1,6 @@
+// Sumner Bradley
 public class BookDepartment extends Department {
-    BookDepartment(String name, int id){
-        super(name, id);
+    BookDepartment(String name){
+        super(name);
     }
 }

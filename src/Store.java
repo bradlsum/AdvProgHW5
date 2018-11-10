@@ -1,3 +1,4 @@
+// Sumner Bradley
 import java.io.*;
 import java.util.*;
 
@@ -42,12 +43,27 @@ public class Store implements Serializable {
         return departments;
     }
 
-    public void addDepartment(Department department){
-        if (this.departments.contains(department)) System.out.println("Customer was already in the store...");
-        else{
-            department.setDepartmentId(id);
-            id = id++;
-            this.departments.add(department);
+    public void addDepartment(Department newDepartment){
+        for (Department department : this.departments){
+            if (department.getName() == newDepartment.getName()){
+                System.out.println("Department is already in the store...\n");
+                return;
+            }
+        }
+        this.departments.add(newDepartment);
+    }
+    
+    public void printDepartments(){
+        for (Department department: this.getDepartments()) {
+            System.out.println(department);
+        }
+    }
+
+    public void printCustomers(){
+        System.out.println("Name");
+        for (Customer customer:
+                this.getCustomers().values()) {
+            System.out.println(customer);
         }
     }
 }

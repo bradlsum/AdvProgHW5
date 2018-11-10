@@ -1,5 +1,5 @@
+// Sumner Bradley
 import java.io.Serializable;
-import java.util.Set;
 
 public abstract class ItemList implements Serializable {
     Item items[] = new Item[100];
@@ -42,6 +42,14 @@ public abstract class ItemList implements Serializable {
         }
 
         System.out.println("Customer was not in the store...");
+    }
+
+    public void printList(){
+        for (Item item : this.items){
+            if (!(item == null)){
+                System.out.println(item.getItemId() + "\t" + item.getName());
+            }
+        }
     }
 
     @Override

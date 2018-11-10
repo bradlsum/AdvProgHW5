@@ -1,3 +1,4 @@
+// Sumner Bradley
 public class ShoppingCart extends ItemList {
     ShoppingCart(){
         super();

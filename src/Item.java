@@ -1,3 +1,4 @@
+// Sumner Bradley
 import java.io.Serializable;
 
 public class Item implements Serializable {
@@ -54,6 +55,6 @@ public class Item implements Serializable {
 
     @Override
     public String toString() {
-        return this.itemId + "\t" + this.departmentId + "\t" + this.name + "\t" + this.price;
+        return this.itemId + "\t\t\t" + this.departmentId + "\t\t" + this.name + "\t\t" + this.price;
     }
 }

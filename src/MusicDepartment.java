@@ -1,3 +1,4 @@
+// Sumner Bradley
 public class MusicDepartment extends Department {
-    MusicDepartment(String name, int id){ super(name, id);}
+    MusicDepartment(String name){ super(name);}
 }

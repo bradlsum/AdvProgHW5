@@ -1,3 +1,4 @@
+// Sumner Bradley
 import java.io.Serializable;
 import java.util.ArrayList;
 
@@ -13,9 +14,10 @@ public abstract class Department implements Serializable {
 
     }
 
-    Department(String name, int departmentId){
+    Department(String name){
         this.name = name;
-        this.departmentId = departmentId;
+        this.departmentId = id;
+        this.id = this.id + 1;
     }
 
     public void enter(Customer customer){
@@ -41,9 +43,9 @@ public abstract class Department implements Serializable {
         else this.observers.add(customer);
     }
 
-    public void removeObserver(String name){
+    public void removeObserver(Customer customer){
         for (int i = 0; i < this.observers.size(); ++i) {
-            if (this.observers.get(i).getName() == name){
+            if (this.observers.get(i) == customer){
                 this.observers.remove(i);
             }
         }
@@ -86,6 +88,7 @@ public abstract class Department implements Serializable {
         for (int i = 0; i < this.observers.size(); ++i) {
             System.out.print(this.observers.get(i).getName() + ", ");
         }
+        System.out.println('\n');
     }
 
     public void addItem(String name, double price){
@@ -107,9 +110,25 @@ public abstract class Department implements Serializable {
     }
 
     public void printItems(){
-        System.out.println("Dept.ID\tID\tName\tPrice");
+        System.out.println("Dept.ID\t\tID\t\tName\t\tPrice");
         for (int i = 0; i <this.items.length; ++i){
-            System.out.println(this.items[i]);
+            if (!(this.items[i] == null))System.out.println(this.items[i]);
         }
+    }
+
+    public void removeItem(int itemIndex) {
+        for (int i = 0; i < this.items.length; ++i) {
+            if (this.items[i + 1] == null) {
+                this.items[itemIndex] = this.items[i];
+                this.items[i] = null;
+                return;
+            }
+        }
+        System.out.println("No item at that index...");
+    }
+
+    @Override
+    public String toString() {
+        return this.departmentId + "\t" + this.name;
     }
 }
