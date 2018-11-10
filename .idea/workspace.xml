@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="83c00bc0-7121-4952-aa8c-73637930f6d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/BookDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/BookDepartment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/Department.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/Department.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/HW5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/HW5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/Item.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/Item.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/ItemList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/ItemList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/MusicDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/MusicDepartment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/ShoppingCart.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/ShoppingCart.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/SoftwareDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/SoftwareDepartment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/Store.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/Store.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/VideoDepartment.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/VideoDepartment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/WishList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HW5/WishList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HW5/store.ser" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BookDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BookDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Department.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HW5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HW5.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ItemList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ItemList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MusicDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MusicDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShoppingCart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SoftwareDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SoftwareDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Store.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Store.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/VideoDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/VideoDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/WishList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WishList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store.ser" beforeDir="false" />
-    </list>
+    <list default="true" id="83c00bc0-7121-4952-aa8c-73637930f6d7" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +70,7 @@
     <session id="-661582763">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.opened" value="3" />
@@ -133,12 +105,21 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Department.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
+            <state relative-caret-position="250">
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3854#3855#0" expanded="true" />
-                <element signature="e#3912#3913#0" expanded="true" />
+                <element signature="method#Department#0;class#Department#0" />
+                <element signature="method#Department#1;class#Department#0" />
+                <element signature="method#enter#0;class#Department#0" />
+                <element signature="method#exit#0;class#Department#0" />
+                <element signature="method#addObserver#0;class#Department#0" />
+                <element signature="method#removeObserver#0;class#Department#0" />
+                <element signature="method#changePrice#0;class#Department#0" />
+                <element signature="method#notifyWatchers#0;class#Department#0" />
+                <element signature="method#addItem#0;class#Department#0" />
+                <element signature="method#printItems#0;class#Department#0" />
+                <element signature="method#removeItem#0;class#Department#0" />
               </folding>
             </state>
           </provider>
@@ -147,8 +128,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Item.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="57" column="86" lean-forward="true" selection-start-line="57" selection-start-column="86" selection-end-line="57" selection-end-column="86" />
+            <state relative-caret-position="45">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+              <folding>
+                <element signature="method#Item#0;class#Item#0" />
+                <element signature="method#Item#1;class#Item#0" />
+                <element signature="method#toString#0;class#Item#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,24 +142,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Store.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+            <state relative-caret-position="450">
+              <caret line="61" selection-start-line="61" selection-end-line="61" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#184#196#0" expanded="true" />
                 <element signature="e#283#301#0" expanded="true" />
-                <element signature="e#283#284#0" expanded="true" />
-                <element signature="e#313#314#0" expanded="true" />
-                <element signature="e#338#339#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#908#909#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#981#982#0" expanded="true" />
-                <element signature="e#1030#1031#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1115#1116#0" expanded="true" />
-                <element signature="e#1149#1150#0" expanded="true" />
+                <element signature="method#enter#0;class#Store#0" />
+                <element signature="method#exit#0;class#Store#0" />
+                <element signature="method#addDepartment#0;class#Store#0" />
+                <element signature="method#printDepartments#0;class#Store#0" />
+                <element signature="method#printCustomers#0;class#Store#0" />
               </folding>
             </state>
           </provider>
@@ -182,8 +161,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HW5.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="615">
-              <caret line="41" column="112" lean-forward="true" selection-start-line="10" selection-end-line="41" selection-end-column="112" />
+            <state relative-caret-position="-540">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,8 +173,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ItemList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
+            <state relative-caret-position="240">
+              <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+              <folding>
+                <element signature="method#addItem#0;class#ItemList#0" />
+                <element signature="method#removeItem#0;class#ItemList#0" />
+                <element signature="method#printList#0;class#ItemList#0" />
+                <element signature="method#toString#0;class#ItemList#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -213,7 +198,7 @@
         <entry file="file://$PROJECT_DIR$/src/WishList.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+              <caret column="17" selection-start-column="17" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -305,7 +290,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541818688149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541822964890" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -371,7 +356,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3296875" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47265625" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.47265625" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39921874" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -424,13 +409,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SoftwareDepartment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/VideoDepartment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -445,6 +423,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/WishList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SoftwareDepartment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="34" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Department.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Department#0;class#Department#0" />
+            <element signature="method#Department#1;class#Department#0" />
+            <element signature="method#enter#0;class#Department#0" />
+            <element signature="method#exit#0;class#Department#0" />
+            <element signature="method#addObserver#0;class#Department#0" />
+            <element signature="method#removeObserver#0;class#Department#0" />
+            <element signature="method#changePrice#0;class#Department#0" />
+            <element signature="method#notifyWatchers#0;class#Department#0" />
+            <element signature="method#addItem#0;class#Department#0" />
+            <element signature="method#printItems#0;class#Department#0" />
+            <element signature="method#removeItem#0;class#Department#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Item.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+          <folding>
+            <element signature="method#Item#0;class#Item#0" />
+            <element signature="method#Item#1;class#Item#0" />
+            <element signature="method#toString#0;class#Item#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ItemList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="46" column="27" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+          <folding>
+            <element signature="method#addItem#0;class#ItemList#0" />
+            <element signature="method#removeItem#0;class#ItemList#0" />
+            <element signature="method#printList#0;class#ItemList#0" />
+            <element signature="method#toString#0;class#ItemList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -452,67 +490,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WishList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ItemList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="49" column="75" selection-start-line="49" selection-start-column="75" selection-end-line="49" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="57" column="86" lean-forward="true" selection-start-line="57" selection-start-column="86" selection-end-line="57" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Store.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="75" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        <state relative-caret-position="450">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#184#196#0" expanded="true" />
             <element signature="e#283#301#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#338#339#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#908#909#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#981#982#0" expanded="true" />
-            <element signature="e#1030#1031#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1115#1116#0" expanded="true" />
-            <element signature="e#1149#1150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Department.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="47" column="49" selection-start-line="47" selection-start-column="49" selection-end-line="47" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3854#3855#0" expanded="true" />
-            <element signature="e#3912#3913#0" expanded="true" />
+            <element signature="method#enter#0;class#Store#0" />
+            <element signature="method#exit#0;class#Store#0" />
+            <element signature="method#addDepartment#0;class#Store#0" />
+            <element signature="method#printDepartments#0;class#Store#0" />
+            <element signature="method#printCustomers#0;class#Store#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HW5.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="615">
-          <caret line="41" column="112" lean-forward="true" selection-start-line="10" selection-end-line="41" selection-end-column="112" />
+        <state relative-caret-position="-540">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
